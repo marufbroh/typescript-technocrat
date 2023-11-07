@@ -12,8 +12,12 @@
     // const bollArray: boolean[] = [true, false, true];
     const bollArray: GenericArray<boolean> = [true, false, true];
 
+    type User = {
+        name: string;
+        age: number;
+    }
 
-    const user: GenericArray<{ name: string, age: number }> = [
+    const user: GenericArray<User> = [
         {
             name: "Tamim",
             age: 23,
