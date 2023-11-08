@@ -33,7 +33,7 @@
     // goribManushErBankAccount.addDeposit(1)
 
     const myBalance = goribManushErBankAccount.getBalance();
-    console.log(myBalance);
+    // console.log(myBalance);
 
 
 
