@@ -22,12 +22,5 @@
     const cat = new Animal("Mia Cat", "Cat", "Mew mew")
 
     cat.makeSound();
-
-
-
-
-
-
-
     //
 }
