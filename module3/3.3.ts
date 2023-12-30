@@ -10,6 +10,10 @@
         if (typeof param1 === "number" && typeof param2 === "number") {
             return param1 + param2
         } else {
+            // concatenate "2" + "3" = 23
+            // return (param1.toString()) + (param2.toString());
+
+            // number 2+3 = 5
             return parseFloat(param1.toString()) + parseFloat(param2.toString());
         }
 
@@ -28,6 +32,7 @@
     }
 
     const getUser = (user: NormalUser | AdminUser) => {
+        // in guard
         if ("role" in user) {
             console.log(`My name is ${user.name} and my role is ${user.role}`);
         }else{
@@ -45,11 +50,6 @@
  }
 
  getUser(adminUser)
-
-
-
-
-
 
     //
 }

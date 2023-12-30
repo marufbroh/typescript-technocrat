@@ -1,6 +1,20 @@
 {
     // instanceof guard
 
+    // class Animal {
+    //     name: string;
+    //     species: string;
+
+    //     constructor(name: string, species: string) {
+    //         this.name = name;
+    //         this.species = species;
+    //     }
+
+    //     makeSound() {
+    //         console.log("He is making sound");
+    //     }
+    // }
+
     class Animal {
         name: string;
         species: string;
@@ -33,7 +47,19 @@
         }
     }
 
-    // smart way
+
+    // const getAnimal = (animal: Animal) => {
+    //     if (animal instanceof Dog) {
+    //         animal.makeBark()
+    //     } else if (animal instanceof Cat) {
+    //         animal.makeMeaw()
+    //     } else {
+    //         animal.makeSound()
+    //     }
+    // }
+
+
+    // smart way for smart developer
     const isDog = (animal: Animal): animal is Dog => {
         return animal instanceof Dog;
     }
@@ -53,6 +79,9 @@
     }
 
 
+
+
+    // instance
     const dog = new Dog("Dog bhai", "Dog");
     const cat = new Cat("Cat bhai", "Cat")
     // cat.makeMeaw()
