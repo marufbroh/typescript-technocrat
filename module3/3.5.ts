@@ -35,7 +35,5 @@
     const myBalance = goribManushErBankAccount.getBalance();
     // console.log(myBalance);
 
-
-
     //
 }
