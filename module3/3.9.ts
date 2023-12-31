@@ -52,13 +52,8 @@
         }
     }
 
-    const hondaCar = new HondaCar();
-    hondaCar.test();
+    // const hondaCar = new HondaCar();
+    // hondaCar.test();
     
-
-
-
-
-
     //
 }
