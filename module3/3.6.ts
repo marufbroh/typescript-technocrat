@@ -26,7 +26,7 @@
 
 
 
-        // getter
+        // getter get modifier 
         get balance() {
             return this._balance
         }
@@ -34,6 +34,10 @@
         //     return this._balance
         // }
     }
+
+
+
+
 
     const goribManushErBankAccount = new BankAccount(111, "Mr. Poor", 500)
 
@@ -47,9 +51,37 @@
     //
 }
 
+
+
 {
     //
 
+    class BankAccount {
+        readonly id: number;
+        name: string;
+        // private _balance: number;
+        protected _balance: number;
+
+        constructor(id: number, name: string, balance: number) {
+            this.id = id;
+            this.name = name;
+            this._balance = balance;
+        }
+
+        // setter set modifier
+        set deposit(amount: number) {
+            if (amount >= 0) {
+                this._balance = this._balance + amount;
+            }
+        }
+
+
+        // getter get modifier 
+        get balance() {
+            return this._balance
+        }
+
+    }
 
 
 
