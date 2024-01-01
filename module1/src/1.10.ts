@@ -5,18 +5,18 @@
 
     // const newDeveloper: FrontendDeveloper = "juniorDeveloper";
 
-    // type User = {
-    //     name: string;
-    //     email?: string;
-    //     gender: "Male" | "Female";
-    //     bloodGroup: "O+" | "A+" | "AB+";
-    // }
+    type User = {
+        name: string;
+        email?: string;
+        gender: "Male" | "Female"; // union type
+        bloodGroup: "O+" | "A+" | "AB+";
+    }
 
-    // const user1 : User= {
-    //     name: "Tamim",
-    //     gender: "Male",
-    //     bloodGroup: "O+",
-    // }
+    const user1 : User= {
+        name: "Tamim",
+        gender: "Male", // example of union type
+        bloodGroup: "O+",
+    }
 
 
     // Intersection types
@@ -36,8 +36,5 @@
         designation1: "Frontend Developer",
         designation2: "Backend Developer"
     }
-
-
-
 
 }

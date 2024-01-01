@@ -13,7 +13,11 @@
         address: "Narsingdi"
     }
 
-    const { contactNo, name: { lastName } } = user;
+    // const { contactNo, name: { lastName } } = user;
+
+    // destructuring and name alias
+    const {address, name: {middleName: midName}, contactNo} = user;
+
 
 
     // array Destructuring

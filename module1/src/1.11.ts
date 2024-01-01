@@ -38,11 +38,9 @@
     }
 
     const permanentAddress = user?.address?.permanentAddress ?? "No permanent Address";
-    console.log({permanentAddress});
+    console.log({ permanentAddress });
 
-
-
-
+    // const permanentAddress1 = user.address?.permanentAddress ?? "No permanent address";
 
     //
 }
