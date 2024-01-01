@@ -29,7 +29,7 @@
 
 
     const addCourseToStudent = <T>(student: T) => {
-        const course : string = "Next Level Web Development";
+        const course: string = "Next Level Web Development";
         return {
             ...student,
             course
@@ -37,12 +37,10 @@
     }
 
 
-    const student1 = addCourseToStudent<{id: number; name: string}>({id: 1, name: "Tamim"})
-    const student2 = addCourseToStudent<{id: number; name: string}>({id: 2, name: "Maruf"})
-
-
-
-
+    const student1 = addCourseToStudent<{ id: number; name: string }>({ id: 1, name: "Tamim" })
+    const student2 = addCourseToStudent<{ id: number; name: string }>({ id: 2, name: "Maruf" })
+    // const student3 = addCourseToStudent<string>("tamim")
+    console.log(student2);
 
     //
 }

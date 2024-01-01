@@ -6,7 +6,7 @@
         ship: string;
     }
 
-    type Owner = "bike" | "car" | "ship";
+    type Owner = "bike" | "car" | "ship"; // manually
 
     type Owner2 = keyof Vehicle;
 
@@ -22,13 +22,6 @@
     }
 
     const result1 = getPropertyValue(user, "address")
-
-
-
-
-
-
-
 
     //
 }

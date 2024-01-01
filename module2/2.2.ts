@@ -11,8 +11,10 @@
         age: number;
     }
 
+    // type alias intersection
     type UserWithRole1 = User1 & { role: string; }
 
+    // interface intersection
     interface UserWithRole2 extends User2 {
         role: string;
     }
@@ -35,8 +37,16 @@
 
     const rollNumbers1: Roll2 = [1, 2, 3];
 
+    interface IRoll {
+        [index: number]: string;
+    }
+
+    const rollNumbers2: IRoll = ["1", "2", "3"];
+
 
     type Add1 = (num1: number, num2: number) => number;
+
+    // interface for function
     interface Add2 {
         (num1: number, num2: number): number;
     }

@@ -29,16 +29,20 @@
     ]
 
 
-    // generic tuple
+    // normal tuple
+    const arrayNumber: [number, string, boolean] = [1, "string", true]
 
+    // generic tuple using type
     type GenericTuple<X, Y> = [X, Y]
 
     const manush: GenericTuple<string, string> = ["Mr. X", "Ms. Y"]
 
-    const userWithId: GenericTuple<number, { name: string; email: string }> = [123, { name: "Tamim", email: "marufbroh@gmail.com" }]
+    type User1 = {
+        name: string;
+        email: string;
+    }
 
-
-
+    const userWithId: GenericTuple<number, User1> = [123, { name: "Tamim", email: "marufbroh@gmail.com" }]
 
     //
 }

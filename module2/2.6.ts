@@ -23,8 +23,5 @@
     const student3 = addCourseToStudent<Student>({ id: 3, name: "Mr. X", email: "x@gmail.com", emni: "emni" })
 
 
-
-
-
     //
 }
